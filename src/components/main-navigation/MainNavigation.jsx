@@ -9,8 +9,10 @@ export default function MainNavigation() {
     { id: 1, name: "Home", path: "/" },
     { id: 2, name: "About Me", path: "/about-me" },
     { id: 3, name: "Education", path: "/education" },
-    { id: 4, name: "Skills", path: "/skills" },
-    { id: 5, name: "Contact", path: "/contact" },
+    { id: 4, name: "Experience", path: "/experience" },
+    { id: 5, name: "Skills", path: "/skills" },
+    { id: 6, name: "Contact", path: "/contact" },
+
   ];
 
   const navigate = useNavigate();

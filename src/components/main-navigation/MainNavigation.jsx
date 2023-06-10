@@ -8,8 +8,7 @@ export default function MainNavigation() {
   const navItemArr = [
     { id: 1, name: "Home", path: "/" },
     { id: 2, name: "About Me", path: "/about-me" },
-    { id: 3, name: "Education", path: "/education" },
-    { id: 4, name: "Experience", path: "/experience" },
+    { id: 4, name: "My Journey", path: "/journey" },
     { id: 5, name: "Skills", path: "/skills" },
     { id: 6, name: "Contact", path: "/contact" },
 

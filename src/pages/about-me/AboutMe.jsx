@@ -7,8 +7,7 @@ export default function AboutMe() {
       <div className="container">
         <div className="row">
           <div
-            id="left"
-            className="col-6"
+            className="col-6 left"
             style={{
               textAlign: "right",
               paddingTop: "5%",
@@ -53,7 +52,7 @@ export default function AboutMe() {
               .
             </p>
           </div>
-          <div id="right" className="col-6">
+          <div className="col-6 right">
             <div id="demonstrate" style={{ marginTop: "30%" }}>
               <img
                 id="img-1"

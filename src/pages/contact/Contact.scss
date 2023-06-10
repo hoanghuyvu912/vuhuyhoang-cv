@@ -1,0 +1,15 @@
+#contact {
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s;
+
+        &:hover {
+          color: rgb(221, 51, 51);
+        }
+      }
+    }
+  }
+}

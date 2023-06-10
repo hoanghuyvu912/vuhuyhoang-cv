@@ -34,7 +34,7 @@ export default function Skills() {
                 <h4>Efficient at all 4 English skills.</h4>
                 <h4>Logical thinking, ambitious mindset.</h4>
                 <h4>
-                  Friendly, sociable. Got a technical topic needs discussing?
+                  Sociable. Got a technical topic needs discussing?
                   I'm in.
                 </h4>
                 <h4>Eager to learn, willing to earn.</h4>
@@ -84,7 +84,7 @@ export default function Skills() {
                 What I can offer
               </h1>
               <ul style={{ padding: 0 }}>
-                <h4>Patient and focus.</h4>
+                <h4>Patience and focus.</h4>
                 <h4>Solo and team work.</h4>
                 <h4>
                   Got a hard task needs solving? I can do it solo or work out a

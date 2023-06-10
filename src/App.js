@@ -5,6 +5,7 @@ import Contact from "./pages/contact/Contact";
 import AboutMe from "./pages/about-me/AboutMe";
 import Journey from "./pages/journey/Journey";
 import Skills from "./pages/skills/Skills";
+import { AnimatePresence } from "framer-motion";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <AnimatePresence mode={"wait"}>
+      <RouterProvider router={router} />
+    </AnimatePresence>
+  );
 }
 
 export default App;

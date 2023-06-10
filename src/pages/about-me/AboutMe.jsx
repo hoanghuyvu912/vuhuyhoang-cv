@@ -1,9 +1,16 @@
 import React from "react";
 import "./AboutMe.scss";
+import { motion as m } from "framer-motion";
 
 export default function AboutMe() {
   return (
-    <div id="about-me">
+    <m.div
+      id="home"
+      initial={{ y: "100%" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+      exit={{ opacity: 1 }}
+    >
       <div className="container">
         <div className="row">
           <div
@@ -73,6 +80,6 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-    </div>
+    </m.div>
   );
 }

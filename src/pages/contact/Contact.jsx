@@ -23,8 +23,15 @@ export default function Contact() {
               style={{ width: "50%" }}
             />
           </div>
-          <div className="col-6">
-            <h1>
+          <div
+            className="col-6"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <h1 style={{ fontWeight: "bolder" }}>
               You can <span style={{ color: "rgb(221, 51, 51)" }}>reach</span>{" "}
               me at:
             </h1>

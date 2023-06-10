@@ -5,7 +5,7 @@ import { motion as m } from "framer-motion";
 export default function AboutMe() {
   return (
     <m.div
-      id="home"
+      id="about-me"
       initial={{ y: "100%" }}
       animate={{ y: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}

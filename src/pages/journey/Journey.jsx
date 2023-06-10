@@ -1,4 +1,5 @@
 import React from "react";
+import { motion as m } from "framer-motion";
 
 export default function Journey() {
   return (
@@ -19,7 +20,12 @@ export default function Journey() {
               paddingLeft: "10%",
             }}
           >
-            <div>
+            <m.div
+              initial={{ x: "-100%" }}
+              animate={{ x: "0%" }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+              exit={{ opacity: 1 }}
+            >
               <h1
                 style={{
                   color: "rgb(221, 51, 51)",
@@ -30,9 +36,15 @@ export default function Journey() {
                 HCM University of Technology
               </h1>
               <h3>Heat and Thermal Engineering</h3>
-            </div>
+            </m.div>
           </div>
-          <div className="col-6 right">
+          <m.div
+            className="col-6 right"
+            initial={{ y: "-50%" }}
+            animate={{ y: "0%" }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            exit={{ opacity: 1 }}
+          >
             <img
               id="img-1"
               src={require("../../assets/594px-HCMUT_official_logo.png")}
@@ -40,7 +52,7 @@ export default function Journey() {
               className="img-fluid"
               style={{ width: "170px", height: "170px" }}
             />
-          </div>
+          </m.div>
         </div>
         <div
           id="journey-2"
@@ -49,7 +61,11 @@ export default function Journey() {
             marginBottom: "5%",
           }}
         >
-          <div
+          <m.div
+            initial={{ x: "-100%" }}
+            animate={{ x: "0%" }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            exit={{ opacity: 1 }}
             className="col-6 left"
             style={{ display: "flex", justifyContent: "right" }}
           >
@@ -60,7 +76,7 @@ export default function Journey() {
               className="img-fluid"
               style={{ width: "70%", marginLeft: "auto" }}
             />
-          </div>
+          </m.div>
           <div
             className="col-6 right"
             style={{
@@ -68,7 +84,12 @@ export default function Journey() {
               paddingRight: "10%",
             }}
           >
-            <div>
+            <m.div
+              initial={{ x: "100%" }}
+              animate={{ x: "0%" }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+              exit={{ opacity: 1 }}
+            >
               <h1
                 style={{
                   color: "rgb(221, 51, 51)",
@@ -79,7 +100,7 @@ export default function Journey() {
                 Panasonic Sales Vietnam
               </h1>
               <h3>Project Service Engineer</h3>
-            </div>
+            </m.div>
           </div>
         </div>
         <div
@@ -96,7 +117,12 @@ export default function Journey() {
               paddingLeft: "10%",
             }}
           >
-            <div>
+            <m.div
+              initial={{ x: "-100%" }}
+              animate={{ x: "0%" }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+              exit={{ opacity: 1 }}
+            >
               <h1
                 style={{
                   color: "rgb(221, 51, 51)",
@@ -107,9 +133,15 @@ export default function Journey() {
                 Axon Active
               </h1>
               <h3>Non-it Trainee</h3>
-            </div>
+            </m.div>
           </div>
-          <div className="col-6 right">
+          <m.div
+            className="col-6 right"
+            initial={{ y: "50%" }}
+            animate={{ y: "0%" }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            exit={{ opacity: 1 }}
+          >
             <img
               id="img-3"
               src={require("../../assets/Axon_Active_logo_min.jpg")}
@@ -117,7 +149,7 @@ export default function Journey() {
               className="img-fluid"
               style={{ width: "50%" }}
             />
-          </div>
+          </m.div>
         </div>
       </div>
     </div>

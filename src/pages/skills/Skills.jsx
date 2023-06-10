@@ -1,5 +1,5 @@
 import React from "react";
-import { IconTopologyStar3 } from "@tabler/icons-react";
+import { motion as m } from "framer-motion";
 
 export default function Skills() {
   return (
@@ -13,7 +13,11 @@ export default function Skills() {
             marginBottom: "5%",
           }}
         >
-          <div
+          <m.div
+            initial={{ x: "-100%" }}
+            animate={{ x: "0%" }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            exit={{ opacity: 1 }}
             className="col-6 left"
             style={{
               textAlign: "right",
@@ -34,15 +38,18 @@ export default function Skills() {
                 <h4>Efficient at all 4 English skills.</h4>
                 <h4>Logical thinking, ambitious mindset.</h4>
                 <h4>
-                  Sociable. Got a technical topic needs discussing?
-                  I'm in.
+                  Sociable. Got a technical topic needs discussing? I'm in.
                 </h4>
                 <h4>Eager to learn, willing to earn.</h4>
               </ul>
             </div>
-          </div>
+          </m.div>
           <div className="col-6 right">
-            <img
+            <m.img
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+              exit={{ opacity: 1 }}
               src={require("../../assets/Shutterstock263031548_VectorGoddess.jpg.png")}
               alt=""
             />
@@ -59,11 +66,19 @@ export default function Skills() {
             className="col-6 left"
             style={{ display: "flex", justifyContent: "right" }}
           >
-            <img
+            <m.img
               src={require("../../assets/handshake.png")}
               alt="handshake"
               className="img-fluid"
               width="50%"
+              initial={{ scale: 0 }}
+              animate={{ rotate: 360, scale: 1 }}
+              transition={{ duration: 1 }}
+              // transition={{
+              //   type: "spring",
+              //   stiffness: 260,
+              //   damping: 20,
+              // }}
             />
           </div>
           <div
@@ -73,7 +88,12 @@ export default function Skills() {
               paddingRight: "10%",
             }}
           >
-            <div>
+            <m.div
+              initial={{ x: "100%" }}
+              animate={{ x: "0%" }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+              exit={{ opacity: 1 }}
+            >
               <h1
                 style={{
                   color: "rgb(221, 51, 51)",
@@ -92,7 +112,7 @@ export default function Skills() {
                 </h4>
                 <h4>Whatever needed to finish the task at hand.</h4>
               </ul>
-            </div>
+            </m.div>
           </div>
         </div>
       </div>

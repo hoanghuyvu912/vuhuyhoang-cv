@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <m.div
       id="home"
-      initial={{ y: "100%" }}
-      animate={{ y: "0%" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
       exit={{ opacity: 1 }}
     >
       <div
@@ -22,11 +22,12 @@ export default function Home() {
         <h1
           style={{ fontWeight: "bolder", padding: "1rem ", fontSize: "50px" }}
         >
-          Welcome to my portfolio
+          Welcome to my{" "}
+          <span style={{ color: "rgb(221, 51, 51)" }}>portfolio</span>
         </h1>
         <div>
           <img
-            src={require("../../src/assets/20901374_1524369140962185_6449363542250159267_o.jpg")}
+            src={require("../../../src/assets/20901374_1524369140962185_6449363542250159267_o.jpg")}
             alt="self-portrait"
             className="img-fluid"
             style={{ borderRadius: "50%", height: "50%" }}

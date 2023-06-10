@@ -4,10 +4,6 @@ import MainNavigation from "../components/main-navigation/MainNavigation";
 
 export default function Root() {
   return (
-    // <Fragment>
-    //   <MainNavigation />
-    //   <Outlet />
-    // </Fragment>
     <Fragment>
       <MainNavigation />
       <Outlet />

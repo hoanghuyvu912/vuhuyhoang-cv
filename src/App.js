@@ -1,11 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
 import Root from "./pages/Root";
 import Contact from "./pages/contact/Contact";
 import AboutMe from "./pages/about-me/AboutMe";
 import Journey from "./pages/journey/Journey";
 import Skills from "./pages/skills/Skills";
 import { AnimatePresence } from "framer-motion";
+import Home from "./pages/homepage/Home";
 
 const router = createBrowserRouter([
   {
@@ -23,9 +23,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <AnimatePresence mode={"wait"}>
       <RouterProvider router={router} />
-    </AnimatePresence>
   );
 }
 
